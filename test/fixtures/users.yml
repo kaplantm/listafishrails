@@ -1,0 +1,46 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+confirmed_user:
+  email: user_one@example.com
+  confirmed_at: <%= Time.zone.now %>
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+confirmed_user_with_time_zone:
+  email: user_with_time_zone@example.com
+  confirmed_at: <%= Time.zone.now %>
+  time_zone: 'Eastern Time (US & Canada)'
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+confirmed_user_with_activities:
+  email: confirmed_user_with_activities@example.com
+  confirmed_at: <%= Time.zone.now %>
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+another_confirmed_user_with_activities:
+  email: another_confirmed_user_with_activities@example.com
+  confirmed_at: <%= Time.zone.now %>
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>  
+
+confirmed_user_with_searchable_activities:
+  email: confirmed_user_with_searchable_activities@example.com
+  confirmed_at: <%= Time.zone.now %>
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+confirmed_user_with_totals:
+  email: confirmed_user_with_totals@example.com
+  confirmed_at: <%= Time.zone.now %>
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+confirmed_user_with_shoes:
+  email: confirmed_user_with_shoes@example.com
+  confirmed_at: <%= Time.zone.now %>
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+confirmed_user_with_shoe:
+  email: confirmed_user_with_shoe@example.com
+  confirmed_at: <%= Time.zone.now %>
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
