@@ -83,4 +83,4 @@ production:
   <<: *default
   database: listafish_production
   username: listafish
-  password: <%= ENV['STRIDECATCHER_DATABASE_PASSWORD'] %>
+  password: <%= ENV['LISTAFISH_DATABASE_PASSWORD'] %>
